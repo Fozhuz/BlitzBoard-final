@@ -1,0 +1,100 @@
+html {
+  font-family: "Playfair Display", serif;
+  background-color: #033e5f;
+  color: beige;
+  text-align: center;
+  zoom: 90%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+div {
+  padding: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+table {
+  display: flex;
+  font-size: large;
+  border: 1px solid black;
+}
+tr {
+  padding: 0;
+  text-align: center;
+}
+td {
+  height: 50px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+img {
+  width: 120px;
+  height: 120px;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+img:hover {
+  transform: scale(1.7);
+}
+
+.inputNostyle {
+  font-family: "Playfair Display", serif;
+  margin: auto;
+  text-align: center;
+  font-size: xx-large;
+  padding: 10px 40px;
+  width: 200px;
+  height: 20px;
+  border-radius: 2px;
+}
+
+.inputStyle {
+  font-family: "Playfair Display", serif;
+  font-size: xx-large;
+  color: beige;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+  border: 1px solid #000;
+  background-color: #000;
+  display: inline-block;
+  padding: 20px 60px;
+}
+
+.header {
+  height: 50px;
+  background: linear-gradient(to top right, #bfc, pink);
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.tableau {
+  width: 700px;
+  display: flex;
+}
+
+.connexion {
+  padding-top: 4%;
+  width: 30%;
+
+  display: flex;
+  flex-direction: column;
+}
+.connexion form {
+  padding: 3%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}

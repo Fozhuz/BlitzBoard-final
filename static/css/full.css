@@ -1,0 +1,9 @@
+html {
+  font-family: "Playfair Display", serif;
+  background-color: #033e5f;
+  color: beige;
+}
+
+div[class="board-b72b1"] {
+  border: thick double grey;
+}

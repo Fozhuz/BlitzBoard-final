@@ -1,0 +1,70 @@
+html {
+  font-family: "Playfair Display", serif;
+  font-size: x-large;
+  background-color: #033e5f;
+  color: beige;
+}
+
+div[class="board-b72b1"] {
+  border: thick double grey;
+}
+
+.header {
+  height: 80px;
+  background: linear-gradient(to top right, #bfc, pink);
+}
+
+.info {
+  max-width: 400px;
+}
+
+.board {
+  width: 500px;
+  margin: auto;
+}
+
+.inputNostyle {
+  font-family: "Playfair Display", serif;
+  margin: auto;
+  text-align: center;
+  font-size: xx-large;
+  padding: 10px 40px;
+  width: 200px;
+  height: 20px;
+  border-radius: 2px;
+}
+
+.inputStyle {
+  font-family: "Playfair Display", serif;
+  font-size: xx-large;
+  color: beige;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+  border: 1px solid #000;
+  background-color: #000;
+  display: inline-block;
+  padding: 10px 30px;
+}
+
+.mid {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.chat {
+  display: none;
+  padding-right: 20px;
+}
+
+.messages {
+  height: 600px;
+  overflow-y: scroll;
+  border: 2px solid black;
+}
+
+.messageSent {
+  padding: 5px;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="M.Tancrez" name="author" />
+    <title>BlitzBoard</title>
+    <link rel="icon" href="../img/icon.png" />
+    <link rel="stylesheet" href="./css/startpage.css" />
+  </head>
+  <body>
+    <!--
+  <div class="header"></div>
+-->
+
+    <div class="main">
+      <div class="tableau">
+        <table>
+          <tr>
+            <td><b>Pièce</b></td>
+            <td><b>Image</b></td>
+            <td><b>Rôle</b></td>
+          </tr>
+
+          <tr>
+            <td>Cavalier</td>
+            <td><img src="../img/moves/Nmove.png" /></td>
+            <td>
+              Le cavalier est la seule pièce « sauteuse » du jeu. Il se déplace
+              d'une case dans une direction horizontale ou verticale. Une autre
+              visualisation possible pour décrire son déplacement est de dire
+              qu'il se déplace de deux cases devant lui puis qu'il va sur une
+              case perpendiculaire. On dit alors qu'il se déplace en « L »
+            </td>
+          </tr>
+          <tr>
+            <td>Pion</td>
+            <td><img src="../img/moves/Pmove.png" /></td>
+            <td>
+              Le pion se déplace droit devant lui, d'une seule case à chaque
+              coup et sans jamais pouvoir reculer. Lors de son premier
+              déplacement (alors qu'il est sur sa case initiale), un pion peut
+              avancer, au choix, d'une ou de deux cases en un seul coup. Il ne
+              peut capturer une pièce adverse que si elle se trouve à une case
+              en diagonale de lui dans son sens de déplacement
+            </td>
+          </tr>
+          <tr>
+            <td>Roi</td>
+            <td><img src="../img/moves/Kmove.png" /></td>
+            <td>
+              Le roi se déplace d'une case dans n'importe quelle direction. Il
+              est interdit à un joueur de mettre son propre roi en échec
+            </td>
+          </tr>
+          <tr>
+            <td>Fou</td>
+            <td><img src="../img/moves/Bmove.png" /></td>
+            <td>
+              Le fou se déplace en suivant les diagonales, on remarque qu'il se
+              déplace toujours sur les cases d'une même couleur
+            </td>
+          </tr>
+          <tr>
+            <td>Tour</td>
+            <td><img src="../img/moves/Rmove.png" /></td>
+            <td>La tour se déplace en suivant les colonnes ou les rangées</td>
+          </tr>
+          <tr>
+            <td>Reine</td>
+            <td><img src="../img/moves/Qmove.png" /></td>
+            <td>
+              La reine cumule les déplacements de la tour et du fou, cela en
+              fait la pièce la plus puissante du jeu
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="connexion">
+        <form action="/random">
+          <input
+            class="inputStyle"
+            type="submit"
+            value="Join/Create Random Game"
+          />
+        </form>
+
+        <form action="/custom">
+          <input
+            class="inputStyle"
+            type="submit"
+            value="Join/Create Custom Game"
+          />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

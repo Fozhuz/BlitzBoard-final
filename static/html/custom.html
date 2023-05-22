@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BlitzBoard</title>
+    <link rel="icon" href="../img/icon.png" />
+    <script src="../chess/js/chess.js"></script>
+    <script src="../chess/js/chessboard-0.3.0.js"></script>
+    <link rel="stylesheet" href="../chess/css/chessboard-0.3.0.css" />
+    <link rel="stylesheet" href="../css/custom.css" />
+  </head>
+
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--
+  <div class="header"></div>
+-->
+
+    <div class="container">
+      <div class="header/info">
+        <div id="player"></div>
+        <div id="roomNumbers">Choose a username & A room code</div>
+        <form id="formSubmit">
+          <div class="row">
+            <div class="col">
+              <input
+                id="pName"
+                class="inputNostyle"
+                type="text"
+                placeholder="Username"
+              />
+              <input
+                type="text"
+                class="inputNostyle"
+                id="room"
+                placeholder="Room code"
+              />
+            </div>
+            <div class="col">
+              <button class="inputStyle" id="button" onclick="connect()">
+                Connect
+              </button>
+            </div>
+          </div>
+        </form>
+        <div id="state"></div>
+      </div>
+      <div class="mid">
+        <div class="board" id="board"></div>
+        <div class="chat" id="chat">
+          <div class="messages" id="messages"></div>
+          <form id="formMessage">
+            <input
+              type="text"
+              class="inputNostyle"
+              id="message"
+              placeholder="Chat"
+            />
+            <button class="inputStyle" onclick="send_message()">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="../custom.js"></script>
+  </body>
+</html>
